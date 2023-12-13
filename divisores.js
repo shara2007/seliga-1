@@ -1,8 +1,9 @@
 const frm = document.querySelector("form")
 const resp=document.querySelector("h3")
 // ouvinte 
+
 frm.addEventListener("submit",(e)=> {
-    e.preventDeflault()
+    e.preventDefault()
     const num = Number(frm.inNúmero.value)
     let resposta="" 
     for(let i=1; i<= num/2;i++){
